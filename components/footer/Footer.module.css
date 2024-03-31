@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  padding-top: 6rem;
+}
+
+.footer-inner {
+  width: 100%;
+  height: 16rem;
+  padding: 3.2rem 0 6.4rem;
+  background: var(--clr-black);
+}
+
+.footer-content {
+  max-width: 123.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin: auto;
+}
+
+.codeit {
+  color: #676767;
+  font-size: 1.6rem;
+}
+
+.other {
+  display: flex;
+  gap: 30px;
+}
+
+.other > a {
+  color: #676767;
+  font-size: 1.6rem;
+}
+
+.social-container {
+  display: flex;
+  gap: 1.2rem;
+}
