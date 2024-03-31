@@ -1,0 +1,20 @@
+.section-owner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-bg);
+  padding: 2rem 0 6rem;
+}
+
+.section-linkcard {
+  padding: 4rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 106rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
