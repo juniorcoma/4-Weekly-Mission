@@ -1,0 +1,42 @@
+:root {
+  --clr-primary: #6d6afe;
+  --clr-red: #ff5b56;
+  --clr-black: #111322;
+  --clr-white: #fff;
+  --clr-gray100: #3e3e43;
+  --clr-gray60: #9fa6b2;
+  --clr-gray20: #ccd5e3;
+  --clr-gray10: #e7effb;
+  --clr-bg: #f0f6ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}

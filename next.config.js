@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  compiler: {
+    styledComponents: true,
+  },
+  images: {
+    remotePatterns: [
+      { hostname: "cityfood.co.kr" },
+      {
+        protocol: "https",
+        hostname: "*",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
+};
