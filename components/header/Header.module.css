@@ -1,0 +1,31 @@
+.header {
+  width: 100%;
+  padding: 3.2rem 0;
+  background: var(--clr-bg);
+}
+
+.header-inner {
+  max-width: 104rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.profile-box {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.profile-email {
+  color: var(--clr-gray100);
+  font-size: 1.4rem;
+}
+.profile-email::first-letter {
+  text-transform: uppercase;
+}
+
+.profile-img {
+  border-radius: 100%;
+}
