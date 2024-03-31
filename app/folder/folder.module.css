@@ -1,0 +1,17 @@
+.section-addlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-bg);
+  padding: 6rem 0 9rem;
+}
+
+.section-link {
+  padding: 4rem 0;
+}
+
+.section-link_inner {
+  width: 100%;
+  max-width: 106rem;
+  margin: auto;
+}
