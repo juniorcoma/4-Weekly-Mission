@@ -1,0 +1,30 @@
+.full-layout {
+  width: 100%;
+  height: 100vh;
+  background: var(--clr-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.logo {
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.message {
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+.signin-link {
+  color: var(--clr-primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
