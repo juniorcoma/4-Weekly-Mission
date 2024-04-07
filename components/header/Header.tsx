@@ -2,11 +2,11 @@ import "./Header.module.css";
 import style from ".//Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import { SERVER_URL } from "@/constant";
+import instance from "@/lib/instance";
 
 const Header: React.FC = async () => {
-  const request: any = await fetch(`${SERVER_URL}/sample/user`);
-  const profileData = await request.json();
+  const request: any = await instance.get(`/sample/user`);
+  const { data } = request;
 
   return (
     <header className={style.header}>
@@ -21,13 +21,13 @@ const Header: React.FC = async () => {
         </Link>
         <div className={style["profile-box"]}>
           <Image
-            src={profileData.profileImageSource}
+            src={data.profileImageSource}
             width={28}
             height={28}
             alt="프로필 사진"
             className={style["profile-img"]}
           />
-          <p className={style["profile-email"]}>{profileData.email}</p>
+          <p className={style["profile-email"]}>{data.email}</p>
         </div>
       </div>
     </header>

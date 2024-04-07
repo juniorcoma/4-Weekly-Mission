@@ -6,9 +6,7 @@ import FolderListBar from "../folderlistbar/FolderListBar";
 import FolderOptionBar from "../folderoptionbar/FolderOPtionBar";
 import LinkSearchInput from "../linksearchinput/LinkSearchInput";
 import * as S from "./FolderContainer.style";
-import axios from "axios";
-import { SERVER_URL } from "@/constant";
-
+import instance from "@/lib/instance";
 const reducer = (state: any, action: any) => {
   return { ...action };
 };
@@ -22,7 +20,7 @@ const FolderContainer: React.FC = () => {
   const [filterData, setFilterData] = useState<any>(null);
   useEffect(() => {
     const linkRequest = async () => {
-      const req = await axios.get(`${SERVER_URL}/users/4/links`);
+      const req = await instance.get(`/users/4/links`);
       const data = req.data.data.map((link: any, i: number) => {
         if (i === 3) {
           link.image_source =
